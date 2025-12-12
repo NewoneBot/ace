@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="">
+  <meta name="keywords"
+    content="">
+  <meta name="author" content="pixelstrap">
+  <title>ACE - Dashboard</title>
+  <!-- Favicon icon-->
+  <link rel="icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+  <!-- Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="../../css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <!-- Font awesome icon css -->
+  <link rel="stylesheet" href="../assets/css/vendors/%40fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/vendors/%40fortawesome/fontawesome-free/css/fontawesome.css">
+  <link rel="stylesheet" href="../assets/css/vendors/%40fortawesome/fontawesome-free/css/brands.css">
+  <link rel="stylesheet" href="../assets/css/vendors/%40fortawesome/fontawesome-free/css/solid.css">
+  <link rel="stylesheet" href="../assets/css/vendors/%40fortawesome/fontawesome-free/css/regular.css">
+  <!-- Ico Icon css -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/%40icon/icofont/icofont.css">
+  <!-- Flag Icon css -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+  <!-- Themify Icon css -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify-icons/themify-icons/css/themify.css">
+  <!-- Animation css -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css/animate.css">
+  <!-- Whether Icon css-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/weather-icons/css/weather-icons.min.css">
+  <!-- Apex Chart css-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/apexcharts/dist/apexcharts.css">
+  <!-- Data Table css-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/simple-datatables/dist/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+  <!-- App css-->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+</head>
+
+<body>
+  <!-- tap to top-->
+  <div class="tap-top">
+    <svg class="feather">
+      <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-up"></use>
+    </svg>
+  </div>
+  <!-- loader-->
+  <div class="loader-wrapper">
+    <img src="../assets/logo/ACElogo.png" class="loader-img" alt="Loading...">
+  </div>
+  <main class="page-wrapper compact-wrapper" id="pageWrapper">
+    <!-- Page header start -->
+    <header class="page-header row">
+      <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img class="for-light"
+            src="../assets/logo/logo.png" alt="logo"><img class="for-dark" src="../assets/images/logo/dark-logo.png"
+            alt="logo"></a><a class="close-btn" href="javascript:void(0)">
+          <div class="toggle-sidebar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </a></div>
+      <div class="page-main-header col">
+        <div class="header-left d-lg-block d-none">
+          <form class="search-form mb-0">
+            <div class="input-group"><span class="input-group-text pe-0">
+                <svg class="search-bg svg-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                </svg></span>
+              <input class="form-control" type="text" placeholder="Search anything...">
+            </div>
+          </form>
+        </div>
+        <div class="nav-right">
+          <ul class="header-right">
+            <li class="serchinput d-lg-none d-flex"><a class="search-mode">
+                <svg class="svg-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                </svg></a>
+              <div class="form-group search-form">
+                <input type="text" placeholder="Search here...">
+              </div>
+            </li>
+            <!-- Notification menu-->
+            <li class="custom-dropdown"><a href="javascript:void(0)">
+                <svg class="svg-color circle-color">
+                  <use href="../assets/svg/iconly-sprite.svg#Bell"></use>
+                </svg></a><span class="badge rounded-pill badge-secondary">3</span>
+              <div class="custom-menu notification-dropdown py-0 overflow-hidden">
+                <h5 class="title bg-primary-light">Notifications <a href="private-chat.html"><span
+                      class="font-primary">View</span></a></h5>
+                <ul class="activity-update">
+                  <li class="d-flex align-items-center b-l-primary">
+                    <div class="flex-grow-1"> <span>Just Now</span><a href="private-chat.html">
+                        <h5>What`s the project report update?</h5>
+                      </a>
+                      <h6>Rick Novak</h6>
+                    </div>
+                    <div class="flex-shrink-0"> <img class="b-r-15 img-40" src="../assets/images/avatar/10.jpg" alt="">
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center b-l-secondary">
+                    <div class="flex-grow-1"> <span>12:47 am</span><a href="private-chat.html">
+                        <h5>James created changelog page</h5>
+                      </a>
+                      <h6>Susan Connor</h6>
+                    </div>
+                    <div class="flex-shrink-0"> <img class="b-r-15 img-40" src="../assets/images/avatar/4.jpg" alt="">
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center b-l-tertiary">
+                    <div class="flex-grow-1"> <span>06:10 pm</span><a href="private-chat.html">
+                        <h5>Polly edited Contact page</h5>
+                      </a>
+                      <h6>Roger Lum</h6>
+                    </div>
+                    <div class="flex-shrink-0"> <img class="b-r-15 img-40" src="../assets/images/avatar/1.jpg" alt="">
+                    </div>
+                  </li>
+                  <li class="mt-3 d-flex justify-content-center">
+                    <div class="button-group"><a class="btn btn-secondary" href="private-chat.html">All Notification</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="profile-dropdown custom-dropdown">
+              <div class="d-flex align-items-center"><img src="../assets/images/profile.png" alt="">
+                <div class="flex-grow-1">
+                  <h5>Admin</h5>
+                </div>
+              </div>
+              <div class="custom-menu overflow-hidden">
+                <ul>
+                  <li class="d-flex">
+                    <svg class="svg-color">
+                      <use href="../assets/svg/iconly-sprite.svg#Profile"></use>
+                    </svg><a class="ms-2" href="user-profile.html">Account</a>
+                  </li>
+                  <li class="d-flex">
+                    <svg class="svg-color">
+                      <use href="../assets/svg/iconly-sprite.svg#Message"></use>
+                    </svg><a class="ms-2" href="letter-box.html">Inbox</a>
+                  </li>
+                  <li class="d-flex">
+                    <svg class="svg-color">
+                      <use href="../assets/svg/iconly-sprite.svg#Document"></use>
+                    </svg><a class="ms-2" href="to-do.html">Task</a>
+                  </li>
+                  <li class="d-flex">
+                    <svg class="svg-color">
+                      <use href="../assets/svg/iconly-sprite.svg#Login"></use>
+                    </svg><a class="ms-2" href="login.html">Log Out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Page header end-->
+    <div class="page-body-wrapper">
+      <!-- Page sidebar start-->
+      <div class="overlay"></div>
+      <aside class="page-sidebar" data-sidebar-layout="stroke-svg">
+        <div class="left-arrow" id="left-arrow">
+          <svg class="feather">
+            <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div id="sidebar-menu">
+          <ul class="sidebar-menu" id="simple-bar">
+            <li class="pin-title sidebar-list p-0">
+              <h5 class="sidebar-main-title">Pinned</h5>
+            </li>
+            <li class="line pin-line"></li>
+            <li class="sidebar-main-title">General</li>
+            <li class="sidebar-list">
+              <svg class="pinned-icon">
+                <use href="../assets/svg/iconly-sprite.svg#Pin"></use>
+              </svg><a class="sidebar-link" href="index.html">
+                <svg class="stroke-icon">
+                  <use href="../assets/svg/iconly-sprite.svg#Home"></use>
+                </svg><span>Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-list">
+              <svg class="pinned-icon">
+                <use href="../assets/svg/iconly-sprite.svg#Pin"></use>
+              </svg><a class="sidebar-link" href="javascript:void(0)">
+                <svg class="stroke-icon">
+                  <use href="../assets/svg/iconly-sprite.svg#Pie"></use>
+                </svg><span>Leads</span>
+                <svg class="feather">
+                  <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#chevron-right"></use>
+                </svg></a>
+              <ul class="sidebar-submenu">
+                <li><a href="datatable-basic-init.html">
+                    <svg class="svg-menu">
+                      <use href="../assets/svg/iconly-sprite.svg#right-3"></use>
+                    </svg>My Leads</a></li>
+              </ul>
+            </li>
+
+            <li class="line"> </li>
+
+          </ul>
+        </div>
+        <div class="right-arrow" id="right-arrow">
+          <svg class="feather">
+            <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </aside>
+      <!-- Page sidebar end-->
+      <div class="page-body">
+        <div class="container-fluid">
+          <div class="row page-title">
+            <div class="col-sm-6">
+              <h3>Dashboard</h3>
+            </div>
+            <div class="col-sm-6">
+              <nav>
+                <ol class="breadcrumb justify-content-sm-end align-items-center">
+                  <li class="breadcrumb-item"> <a href="index.html">
+                      <svg class="svg-color">
+                        <use href="../assets/svg/iconly-sprite.svg#Home"></use>
+                      </svg></a></li>
+                  <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid default-dashboard">
+          <div class="row">
+
+            <div class="col-12">
+                <div class="row">
+                  <!-- Order Delivery-->
+                  <div class="col-md-3">
+                    <div class="card progress-items"> 
+                                        <div class="card-header pb-0">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                              <div class="d-flex gap-2">
+                                                <h5 class="f-18 font-light">Total Sale</h5>
+                                                <div class="badge align-items-center d-flex badge-light-danger">
+                                                  <svg class="feather me-1 pt-0 stroke-danger">
+                                                    <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-up-right"></use>
+                                                  </svg><span class="f-w-500">3.4%</span>
+                                                </div>
+                                              </div>
+                                              <h3 class="f-26 f-w-600 mt-3">$ 12,463</h3>
+                                            </div>
+                                            <div class="flex-shrink-0 bg-light-primary">
+                                              <svg class="svg-w-23 fill-primary w-10">
+                                                <use href="../assets/svg/iconly-sprite.svg#Product-discount"></use>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body progress-card pt-0">
+                                          <div>
+                                            <p class="f-w-500">20% since Last Month</p>
+                                          </div>
+                                          <div class="order-chart">
+                                            <div class="chart" id="sale-chart"></div>
+                                          </div>
+                                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card progress-items"> 
+                                        <div class="card-header pb-0">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                              <div class="d-flex gap-2">
+                                                <h5 class="f-18 font-light">New Orders</h5>
+                                                <div class="badge align-items-center d-flex badge-light-success">
+                                                  <svg class="feather me-1 pt-0 stroke-success">
+                                                    <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-down-right"></use>
+                                                  </svg><span class="f-w-500">4.5%</span>
+                                                </div>
+                                              </div>
+                                              <h3 class="f-26 f-w-600 mt-3">$ 51,325</h3>
+                                            </div>
+                                            <div class="flex-shrink-0 bg-light-secondary">
+                                              <svg class="svg-w-30 fill-secondary">
+                                                <use href="../assets/svg/iconly-sprite.svg#order-product"></use>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body progress-card pt-0">
+                                          <div>
+                                            <p class="f-w-500">14% since Last Month</p>
+                                          </div>
+                                          <div class="order-chart">
+                                            <div class="chart" id="order-chart"></div>
+                                          </div>
+                                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"> 
+                    <div class="card progress-items"> 
+                                        <div class="card-header pb-0">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                              <div class="d-flex gap-2">
+                                                <h5 class="f-18 font-light">Order Delivery</h5>
+                                                <div class="badge align-items-center d-flex badge-light-danger">
+                                                  <svg class="feather me-1 pt-0 stroke-danger">
+                                                    <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-up-right"></use>
+                                                  </svg><span class="f-w-500">2.3%</span>
+                                                </div>
+                                              </div>
+                                              <h3 class="f-26 f-w-600 mt-3">$ 32,587</h3>
+                                            </div>
+                                            <div class="flex-shrink-0 bg-light-tertiary">
+                                              <svg class="svg-w-31 fill-tertiary">
+                                                <use href="../assets/svg/iconly-sprite.svg#delivery-van"></use>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body progress-card pt-0">
+                                          <div>
+                                            <p class="f-w-500">10% since Last Month</p>
+                                          </div>
+                                          <div class="order-chart">
+                                            <div class="chart" id="delivery-chart"></div>
+                                          </div>
+                                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"> 
+                    <div class="card progress-items"> 
+                                        <div class="card-header pb-0">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                              <div class="d-flex gap-2">
+                                                <h5 class="f-18 font-light">Order Delivery</h5>
+                                                <div class="badge align-items-center d-flex badge-light-danger">
+                                                  <svg class="feather me-1 pt-0 stroke-danger">
+                                                    <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#arrow-up-right"></use>
+                                                  </svg><span class="f-w-500">2.3%</span>
+                                                </div>
+                                              </div>
+                                              <h3 class="f-26 f-w-600 mt-3">$ 32,587</h3>
+                                            </div>
+                                            <div class="flex-shrink-0 bg-light-tertiary">
+                                              <svg class="svg-w-31 fill-tertiary">
+                                                <use href="../assets/svg/iconly-sprite.svg#delivery-van"></use>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body progress-card pt-0">
+                                          <div>
+                                            <p class="f-w-500">10% since Last Month</p>
+                                          </div>
+                                          <div class="order-chart">
+                                            <div class="chart" id="delivery-chart"></div>
+                                          </div>
+                                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="col-sm-12 col-xl-12">
+
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card investing-card">
+                <div class="card-header pb-0">
+                  <h4>Investing</h4>
+                  <div class="dropdown icon-dropdown">
+                    <button class="btn dropdown-toggle" id="userdropdown3" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"></button>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown3"><a
+                        class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a
+                        class="dropdown-item" href="#">Yearly</a></div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="investing" id="investing"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <!-- invest menu-->
+              <div class="card invest-card">
+                <div class="card-header">
+                  <h4>Total Investment</h4>
+                  <div class="dropdown icon-dropdown">
+                    <button class="btn dropdown-toggle" id="userdropdown2" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"></button>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown2"><a
+                        class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a
+                        class="dropdown-item" href="#">Yearly</a></div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="chart-invest" id="investment"></div>
+                  <ul>
+                    <li>
+                      <h5>Total</h5>
+                      <h6>$ 34,4562</h6>
+                    </li>
+                    <li>
+                      <h5>Monthly</h5>
+                      <h6>$ 12,463</h6>
+                    </li>
+                    <li>
+                      <h5>Daily</h5>
+                      <h6>$ 5000</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card project-card">
+                <div class="card-header">
+                  <h4>Project Overview</h4>
+                  <div class="dropdown icon-dropdown">
+                    <button class="btn dropdown-toggle" id="userdropdown7" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"></button>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown7"><a
+                        class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a
+                        class="dropdown-item" href="#">Yearly</a></div>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <h4>56<span class="ms-1">Project</span></h4>
+                  <div class="row align-items-center">
+                    <div class="col-5 custom-width">
+                      <div class="progress progress-striped-primary">
+                        <div class="progress-bar" style="width: 55%" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress progress-striped-secondary">
+                        <div class="progress-bar" style="width: 60%" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="progress progress-striped-tertiary">
+                        <div class="progress-bar" style="width: 45%" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-7 d-sm-none d-md-block">
+                      <ul class="overview-details">
+                        <li class="d-flex align-items-center">
+                          <div class="circle-dot-primary"><span></span></div>
+                          <h5>15<span class="font-light ms-1">Signed</span></h5>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <div class="circle-dot-secondary"><span></span></div>
+                          <h5>62<span class="font-light ms-1">Manager Review</span></h5>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <div class="circle-dot-tertiary"><span></span></div>
+                          <h5>20<span class="font-light ms-1">Client Review</span></h5>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="view-btn btn bg-light d-block w-100 position-relative" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">View project
+                    <svg class="feather">
+                      <use href="../assets/svg/feather-icons/dist/feather-sprite.svg#chevron-down"></use>
+                    </svg>
+                    <ul class="dropdown-menu dropdown-block">
+                      <li><a class="dropdown-item" href="#">Project</a></li>
+                      <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                      <li><a class="dropdown-item" href="#">Crypto</a></li>
+                    </ul>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- jquery-->
+  <script src="../assets/js/vendors/jquery/dist/jquery.min.js"></script>
+  <!-- bootstrap js-->
+  <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <!-- Sidebar js-->
+  <script src="../assets/js/sidebar.js"></script>
+  <!-- Apexchart js-->
+  <script src="../assets/js/vendors/apexcharts/dist/apexcharts.min.js"></script>
+  <!-- Chart js-->
+  <script src="../assets/js/vendors/chart.js/dist/chart.umd.js"></script>
+  <!-- Datatable js-->
+  <script src="../assets/js/vendors/simple-datatables/dist/umd/simple-datatables.js"></script>
+  <!-- default dashboard js-->
+  <script src="../assets/js/dashboard/default.js"></script>
+  <!-- scrollbar js-->
+  <script src="../assets/js/scrollbar/simplebar.js"></script>
+  <script src="../assets/js/scrollbar/custom.js"></script>
+  <!-- scrollable-->
+  <!-- customizer-->
+  <script src="../assets/js/theme-customizer/customizer.js"></script>
+  <!-- custom script -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

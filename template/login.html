@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ACE Login Page</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #0f667c 0%, #0b5b6b 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div
+      class="d-flex flex-column flex-lg-row align-items-stretch"
+      style="
+        width: 92%;
+        max-width: 1100px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        background: #fff;
+      "
+    >
+      <div
+        class="d-none d-lg-flex flex-column justify-content-center align-items-start"
+        style="
+          flex: 1 1 50%;
+          padding: 48px 56px;
+          background: linear-gradient(180deg, #f6fbff 0%, #f0f7f7 100%);
+        "
+      >
+        <!-- Logo -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 22px;
+          "
+        >
+          <div style="line-height: 1">
+            <img src="../assets/logo/ACElogo.png" alt="User" />
+          </div>
+        </div>
+
+        <h2
+          style="
+            margin: 8px 0 6px;
+            color: #1f6b88;
+            font-weight: 800;
+            font-size: 32px;
+          "
+        >
+          ACE Insurance <br />
+          Brokers
+        </h2>
+        <div style="color: #6c757d; margin-bottom: 22px; font-size: 14px">
+          Fast. Reliable. Trusted.
+        </div>
+
+        <ul
+          style="
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+            width: 100%;
+            max-width: 320px;
+          "
+        >
+          <li
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 10px;
+              margin-bottom: 14px;
+            "
+          >
+            <div
+              style="
+                min-width: 22px;
+                height: 22px;
+                background: #e8fbf0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #2fad6a;
+                font-weight: 700;
+              "
+            >
+              ✓
+            </div>
+            <div style="color: #344b50; font-weight: 600">Secure access</div>
+          </li>
+          <li
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 10px;
+              margin-bottom: 14px;
+            "
+          >
+            <div
+              style="
+                min-width: 22px;
+                height: 22px;
+                background: #e8fbf0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #2fad6a;
+                font-weight: 700;
+              "
+            >
+              ✓
+            </div>
+            <div style="color: #344b50; font-weight: 600">
+              Role-based dashboard
+            </div>
+          </li>
+          <li
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 10px;
+              margin-bottom: 6px;
+            "
+          >
+            <div
+              style="
+                min-width: 22px;
+                height: 22px;
+                background: #e8fbf0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #2fad6a;
+                font-weight: 700;
+              "
+            >
+              ✓
+            </div>
+            <div style="color: #344b50; font-weight: 600">
+              Activity tracking
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="d-flex flex-column justify-content-start"
+        style="
+          flex: 1 1 50%;
+          padding: 32px 28px;
+          background: #fff;
+          min-width: 300px;
+        "
+      >
+        <div class="d-flex d-lg-none align-items-center mb-3" style="gap: 12px">
+          <div
+            style="
+              width: 46px;
+              height: 46px;
+              border-radius: 10px;
+              background: linear-gradient(180deg, #0e98b4, #0b7ea0);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+              font-weight: 700;
+              font-size: 18px;
+            "
+          >
+            ACE
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #1f6b88; font-size: 18px">
+              ACE Insurance Brokers
+            </div>
+            <div style="font-size: 12px; color: #7b8791">
+              Fast. Reliable. Trusted.
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: left; margin-top: 6px; margin-bottom: 8px">
+          <h3
+            style="margin: 0; font-size: 22px; font-weight: 700; color: #1f2d3d"
+          >
+            Welcome back
+          </h3>
+          <div style="color: #7b8791; font-size: 13px; margin-top: 6px">
+            Sign in to access your ACE dashboard
+          </div>
+        </div>
+
+        <div style="margin-top: 18px; width: 100%">
+          <label
+            for="email"
+            style="
+              display: block;
+              font-weight: 600;
+              color: #495057;
+              margin-bottom: 6px;
+              font-size: 14px;
+            "
+            >Email</label
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="you@company.com"
+            class="form-control"
+            style="
+              width: 100%;
+              padding: 12px 14px;
+              border-radius: 8px;
+              border: 1px solid #e6e9ee;
+              box-shadow: none;
+              font-size: 14px;
+              margin-bottom: 12px;
+            "
+          />
+
+          <label
+            for="password"
+            style="
+              display: block;
+              font-weight: 600;
+              color: #495057;
+              margin-bottom: 6px;
+              font-size: 14px;
+            "
+          >
+            Password
+          </label>
+
+          <div style="position: relative; width: 100%; margin-bottom: 12px">
+            <input
+              id="password"
+              type="password"
+              placeholder="********"
+              class="form-control"
+              style="
+                width: 100%;
+                padding: 12px 44px 12px 14px;
+                border-radius: 8px;
+                border: 1px solid #e6e9ee;
+                font-size: 14px;
+              "
+            />
+
+            <button
+              id="showBtn"
+              type="button"
+              style="
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+                background: transparent;
+                border: none;
+                color: #1976d2;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 0;
+                cursor: pointer;
+              "
+            >
+              Show
+            </button>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 14px;
+              flex-wrap: wrap;
+              gap: 8px;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 8px">
+              <input
+                id="remember"
+                type="checkbox"
+                style="width: 16px; height: 16px"
+              />
+              <label
+                for="remember"
+                style="margin: 0; font-size: 14px; color: #495057"
+                >Remember me</label
+              >
+            </div>
+            <a
+              href="#"
+              style="font-size: 14px; color: #1976d2; text-decoration: none"
+              >Forgot?</a
+            >
+          </div>
+
+          <div
+            style="
+              text-align: center;
+              margin-top: 14px;
+              color: #9aa6ad;
+              font-size: 13px;
+            "
+          >
+            © ACE Insurance Brokers
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show/hide script (robust) -->
+    <script>
+      (function () {
+        const pwd = document.getElementById("password");
+        const btn = document.getElementById("showBtn");
+        btn.addEventListener("click", function () {
+          if (pwd.type === "password") {
+            pwd.type = "text";
+            btn.textContent = "Hide";
+          } else {
+            pwd.type = "password";
+            btn.textContent = "Show";
+          }
+        });
+      })();
+    </script>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
